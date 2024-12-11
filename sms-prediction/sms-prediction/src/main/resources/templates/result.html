@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            padding: 30px;
+        }
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        h3 {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 40px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .result {
+            font-size: 18px;
+            margin: 20px 0;
+            color: #333;
+        }
+        .prediction {
+            font-weight: bold;
+            color: #e74c3c; /* Red for spam */
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h1>Hasil Prediksi:</h1>
+<div class="container">
+    <p class="result">Text: <strong>[[${prediction}]]</strong></p>
+    <a href="/">Kembali</a>
+</div>
+</body>
+</html>
